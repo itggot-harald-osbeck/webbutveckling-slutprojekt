@@ -16,7 +16,7 @@ header{
     display: flex;
     justify-content: space-around;
     color: white;
-    
+    padding: 10px 0 10px 0;
 }
 .menubutton{
     display: flex;
@@ -81,5 +81,65 @@ ul a{
 }
 .scarylink a{
     color: black;
+    text-decoration: none;
+}
+.shopmain{
+    background-color: #FFDAF6;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 10% 70%;
+    grid-template-areas:
+    "desc"
+    "cate"
+    "products"
+}
+.shopdesc{
+    display: flex;
+    text-align: center;
+    grid-area: desc;
+    justify-content: center;
+    align-items: center;
+    color: #555555;
+    font-size: 1.5rem;
+}
+.categorycont{
+    grid-area: cate;
+
+}
+.productscont{
+    grid-area: products;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     
+}
+.productbox{
+    height: 300px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.productimage{
+    background-color: white;
+    height: 200px;
+    width: 150px;
+}
+.producttext{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.buybutton{
+    background-color: #005FFF;
+    padding:  5px 10px 5px 10px ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
