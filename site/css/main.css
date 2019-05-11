@@ -98,7 +98,7 @@ ul a{
     "products"; */
     display: flex;
     flex-direction: column;
-
+    
 }
 .shopdesc{
     display: flex;
@@ -146,7 +146,7 @@ ul a{
     text-decoration: none;
 }
 .productmain{
-    grid-template-rows: 10% 40% 10% 40%;
+    grid-template-rows: 15% 35% 10% 35%;
     grid-template-areas: 
     "header"
     "image"
@@ -158,14 +158,21 @@ ul a{
     background-color: #FFDAF6;
     padding-left: 10px;
     box-sizing: border-box;
+    padding-bottom: 20px;
 }
 .producttitle.ppage{
     grid-area: header;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: bold;
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    padding-right: 10px;
+
+}
+.producttitle.ppage i.material-icons{
+    font-size: 3rem;
+    text-align: center;
 }
 .pimagecont.ppage{
     grid-area: image;
@@ -174,8 +181,8 @@ ul a{
 }
 .productimage.ppage{
     background-color: white;
-    height: 260px;
-    width: 200px;
+    height: 220px;
+    width: 150px;
     border-radius: 5px;
 }
 .producttext.ppage{
@@ -216,7 +223,7 @@ ul a{
     flex-direction: column;
 }
 .categorybutton{
-    width: calc(50% - 2px);
+    width: calc(50% - 12px);
     height: 50px;
     border: 1px grey solid;
     text-decoration: none;
@@ -225,7 +232,9 @@ ul a{
     justify-content: center;
     flex-direction: column;
     font-size: 1.2rem;
-    
+    padding-left: 10px;
+    color: #2E2E2E;
+
 }
 .categorymenu{
     width: 100%;
@@ -236,15 +245,64 @@ ul a{
     height: 50px;
     text-decoration: none;
     border: 1px grey solid;
-    color: black;
-    width: calc(100% - 2px);
+    color: #2E2E2E;
+    width: calc(100% - 22px);
     display: flex;
     align-items: center;
+    border-top: none;
+    padding-left: 20px;
     
-
 }
 .catmenuactivate{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+a.cartlink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+a.cartlink i.material-icons{
+    font-size: 3.5rem;
+    color: white;
+}
+.cartmain{
+    background-color: #FFDAF6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartback{
+    padding: 5% 0 0 0%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.cartback i.material-icons{
+    font-size: 4rem;
+}
+.carttitle{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2E2E2E;
+}
+.carttext{
+    text-align: center;
+    color: #555555;
+    padding: 10%;
+}
+.cartbutton{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    background-color: #005FFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 70% 0 0 0;
+    width: 160px;
+    
 }
