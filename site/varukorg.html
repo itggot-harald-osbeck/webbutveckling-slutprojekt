@@ -10,56 +10,59 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <div class="menubutton" onclick="menu()">
-                <i class="material-icons">
-                    menu
-                </i>
-            </div>
-            <div class="title">
-                Varukorg
-            </div>
-            <div class="empty"></div>
-        </header>
-        <div class="menu">
-            <div class="menutitle">
-                MEny
+        <main>
+            
+            <header>
                 <div class="menubutton" onclick="menu()">
                     <i class="material-icons">
-                        close
+                        menu
                     </i>
                 </div>
-            </div>
-            <ul>
-                <li> <a href="index.html">Hem</a> </li>
-                <li> <a href="varor.html">Varor & Konst</a> </li>
-                <li> <a href="hyllning.html">Hyllning</a> </li>
-            </ul>
-            <div class="scarylink">
-                <a href="jimmie.html">
-                    Ådi <br> & <br> Jimme
-                </a>
-            </div>
-        </div>
-        <div class="cartmain">
-            <div class="cartback" onclick="cartback()">
-                <i class="material-icons">
-                    arrow_back
-                </i>
-                <div class="carttitle">
-                    Artiklar
+                <div class="title">
+                    Varukorg
                 </div>
                 <div class="empty"></div>
+            </header>
+            <div class="menu">
+                <div class="menutitle">
+                    MEny
+                    <div class="menubutton" onclick="menu()">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </div>
+                </div>
+                <ul>
+                    <li> <a href="index.html">Hem</a> </li>
+                    <li> <a href="varor.html">Varor & Konst</a> </li>
+                    <li> <a href="hyllning.html">Hyllning</a> </li>
+                </ul>
+                <div class="scarylink">
+                    <a href="jimmie.html">
+                        Ådi <br> & <br> Jimme
+                    </a>
+                </div>
             </div>
-            <div class="carttext">
-                Din varukorg är för tillfället tom
+            <div class="cartmain">
+                <div class="cartback" >
+                    <i class="material-icons"onclick="cartback()">
+                        arrow_back
+                    </i>
+                    <div class="carttitle">
+                        Artiklar
+                    </div>
+                    <div class="cartempty"></div>
+                </div>
+                <div class="carttext">
+                    Din varukorg är för tillfället tom
+                </div>
+                <div class="cartbutton" onclick="cartalert()">
+                    Till Kassan
+                </div>
+                
             </div>
-            <div class="cartbutton" onclick="cartalert()">
-                Till Kassan
-            </div>
-            
         </div>
-    </div>
+    </main>
 </div>
 <script src="js/main.js" ></script>
 </body>

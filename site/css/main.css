@@ -133,6 +133,13 @@ ul a{
     letter-spacing: 2px;
     line-height: 25px;
 }
+.productprice{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
 .buybutton{
     background-color: #005FFF;
     padding:  5px 10px 5px 10px ;
@@ -168,7 +175,7 @@ ul a{
     align-items: center;
     justify-content: space-between;
     padding-right: 10px;
-
+    
 }
 .producttitle.ppage i.material-icons{
     font-size: 3rem;
@@ -234,7 +241,7 @@ ul a{
     font-size: 1.2rem;
     padding-left: 10px;
     color: #2E2E2E;
-
+    
 }
 .categorymenu{
     width: 100%;
@@ -305,4 +312,100 @@ a.cartlink i.material-icons{
     margin: 70% 0 0 0;
     width: 160px;
     
+}
+.cartempty{
+    width: 4rem;
+}
+.mainimage{
+    width: 300px;
+    height: 400px;    
+}
+.shopempty{
+    display: none;
+}
+@media only screen  and (min-width : 1224px) {
+    .title br{
+        display: none;
+    }
+    .menubutton{
+        display: none;
+    }
+    .empty{
+        display: none;
+    }
+    main{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 15% 85%;
+        grid-template-areas: 
+        "menu header"
+        "menu main";
+    }
+    header{
+        grid-area: header;
+        align-items: center;
+    }
+    .menu{
+        grid-area: menu;
+        position: initial;
+        border-right: 3px white solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    .imagemain{
+        grid-area: main;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainimage{
+        height: 400px;
+        width: 700px;
+        background-color: white;
+    }
+    .menu ul{
+        position: relative;
+        top: -10%;
+    }
+    .scarylink{
+        top: 0%;
+        left: 25%;
+    }
+    .title{
+        text-align: center;
+    }
+    .shopempty{
+        display: block;
+        width: 4rem;
+    }
+    .shopmain{
+        grid-area: main;
+    }
+    .cartbutton{
+        margin: 25% 0 0 0;
+    }
+    .carttext{
+        padding: 2.5%;
+    }
+    .shopdesc{
+        padding: 3% 0 3% 0;
+    }
+    .productscont{
+
+    }
+    .productbox{
+        flex-wrap: flex;
+    }
+    .productimage{
+
+    }
+    .producttext{
+
+    }
+    .buybutton{
+
+    }
 }
