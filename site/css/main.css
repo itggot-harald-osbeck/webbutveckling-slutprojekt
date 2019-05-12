@@ -92,7 +92,6 @@ ul a{
 }
 .shopmain{
     background-color: #FFDAF6;
-    height: 200%;
     /* display: grid;
     grid-template-rows: 20% 8% 70%;
     grid-template-areas:
@@ -141,7 +140,7 @@ ul a{
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 25px;
-
+    
 }
 .productdesc{
     display: none;
@@ -172,6 +171,7 @@ ul a{
     padding-left: 10px;
     box-sizing: border-box;
     padding-bottom: 20px;
+    
 }
 .producttitle.ppage{
     grid-area: header;
@@ -180,7 +180,7 @@ ul a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 10px;
+    margin-right: 10px;
     
 }
 .producttitle.ppage i.material-icons{
@@ -200,6 +200,7 @@ ul a{
 }
 .producttext.ppage{
     /* grid-area: price; */
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -209,11 +210,11 @@ ul a{
     
 }
 .buybutton.ppage{
-    /* grid-area: price; */
+    grid-area: price;
     height: 40px;
 }
 .productdesc.ppage{
-    /* grid-area: desc; */
+    grid-area: desc;
     display: block;
     line-height: 25px;
     padding: 0 20px 0 0;
@@ -248,12 +249,20 @@ ul a{
     font-size: 1.2rem;
     padding-left: 10px;
     color: #2E2E2E;
-    
+    position: relative;
+    top: -1px;
+    left: -1px;
 }
 .categorymenu{
     width: 100%;
     display: none;
     
+}
+.categorybuttoncont{
+    height: 50px;
+    border: 1px grey solid;
+    display: flex;
+    flex-direction: row;
 }
 .categorymenu a{
     height: 50px;
@@ -323,9 +332,18 @@ a.cartlink i.material-icons{
 .cartempty{
     width: 4rem;
 }
+.imagemain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .mainimage{
+    position: relative;
+    background-image: url(../img/stefan_gustav@W400pxH400px.jpg);
     width: 300px;
-    height: 400px;    
+    height: 400px;
+    background-position: center;
+    border: 10px gold solid; 
 }
 .shopempty{
     display: none;
@@ -369,9 +387,11 @@ a.cartlink i.material-icons{
         align-items: center;
     }
     .mainimage{
-        height: 400px;
-        width: 700px;
-        background-color: white;
+        position: relative;
+        top: -10%;
+        height: 660px;
+        width: 900px;
+        background-image: url(../img/stefan_gustav@W960pxH960px.jpg);
     }
     .menu ul{
         position: relative;
@@ -435,5 +455,29 @@ a.cartlink i.material-icons{
     .productdesc{
         display: flex;
     }
+    .categorybutton{
+        width: auto;
+        padding-right: 10%;
+    }
+    .productmain{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 15% 35% 10% 35%;
+        grid-template-areas: 
+        "image header"
+        "image price"
+        "image desc"
+        "image desc";
+    }
+    .producttitle.ppage{
+        
+    }
+    .pimagecont.ppage{
 
+    }
+    .producttext.ppage{
+
+    }
+    .productdesc.ppage{
+
+    }
 }
