@@ -11,6 +11,9 @@ body{
     background-color: #FD8AE1;
     height: 100%;
 }
+main{
+    height: 100%;
+}
 header{
     width: 100%;
     display: flex;
@@ -110,7 +113,7 @@ ul a{
     padding: 10% 0 10% 0;
 }
 .productscont{
-    grid-area: products;
+    /* grid-area: products; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;     
@@ -127,7 +130,7 @@ ul a{
     height: 200px;
     width: 150px;
 }
-.producttext{
+.producttitle{
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
@@ -139,6 +142,9 @@ ul a{
     letter-spacing: 2px;
     line-height: 25px;
 
+}
+.productdesc{
+    display: none;
 }
 .buybutton{
     background-color: #005FFF;
@@ -193,7 +199,7 @@ ul a{
     border-radius: 5px;
 }
 .producttext.ppage{
-    grid-area: price;
+    /* grid-area: price; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -203,11 +209,12 @@ ul a{
     
 }
 .buybutton.ppage{
-    grid-area: price;
+    /* grid-area: price; */
     height: 40px;
 }
 .productdesc.ppage{
-    grid-area: desc;
+    /* grid-area: desc; */
+    display: block;
     line-height: 25px;
     padding: 0 20px 0 0;
     
@@ -394,18 +401,39 @@ a.cartlink i.material-icons{
         padding: 3% 0 3% 0;
     }
     .productscont{
-
+        justify-content: center;
     }
     .productbox{
-        flex-wrap: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 300px;
+        margin: 20px;
+        justify-content: space-between;
+    }
+    .pricecontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .productimage{
-
+        height: 300px;
+        width: 300px;
     }
-    .producttext{
-
+    .productprice{
+        font-size: 2rem;
     }
     .buybutton{
-
+        font-size: 2rem;
     }
+    .producttitle{
+        font-size: 2rem;
+        text-align: left;
+        width: 100%
+    }
+    .productdesc{
+        display: flex;
+    }
+
 }
