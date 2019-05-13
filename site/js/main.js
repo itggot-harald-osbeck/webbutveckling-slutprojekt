@@ -12,3 +12,6 @@ function cartback(){
 function cartalert(){
     alert("Lägg till något i varukorgen först!")
 }
+function shopalert(){
+    alert("Det där funkar inte just nu!")
+}

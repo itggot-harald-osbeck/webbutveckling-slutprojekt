@@ -1,5 +1,5 @@
 html{
-    background-color: hotpink;
+    background-color: #FD8AE1;
 }
 body{
     margin: 0;
@@ -52,6 +52,7 @@ header{
     position: absolute;
     top: -100%;
     transition: top 1s;
+    z-index: 10;
 }
 .menutitle{
     display: flex;
@@ -92,12 +93,6 @@ ul a{
 }
 .shopmain{
     background-color: #FFDAF6;
-    /* display: grid;
-    grid-template-rows: 20% 8% 70%;
-    grid-template-areas:
-    "desc"
-    "cate"
-    "products"; */
     display: flex;
     flex-direction: column;
     
@@ -112,7 +107,6 @@ ul a{
     padding: 10% 0 10% 0;
 }
 .productscont{
-    /* grid-area: products; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;     
@@ -128,6 +122,17 @@ ul a{
     background-color: white;
     height: 200px;
     width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.productimage.one{
+    background-image: url(../img/gustav_tshirt@W190pxH220px.jpg);
+}
+.productimage.two{
+    background-image: url(../img/stefan_gustav_tshirt@W190pxH220px.jpg);
+}
+.productimage.three{
+    background-image: url(../img/stefan_gustav@W220pxH220px.jpg);
 }
 .producttitle{
     text-align: center;
@@ -158,7 +163,7 @@ ul a{
     text-decoration: none;
 }
 .productmain{
-    grid-template-rows: 15% 35% 10% 35%;
+    grid-template-rows: 15% 35% 10% 40%;
     grid-template-areas: 
     "header"
     "image"
@@ -280,6 +285,7 @@ ul a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 10;
 }
 a.cartlink{
     display: flex;
@@ -362,7 +368,7 @@ a.cartlink i.material-icons{
         height: 100%;
         display: grid;
         grid-template-columns: 20% 80%;
-        grid-template-rows: 15% 85%;
+        grid-template-rows: 15% auto;
         grid-template-areas: 
         "menu header"
         "menu main";
@@ -372,15 +378,16 @@ a.cartlink i.material-icons{
         align-items: center;
     }
     .menu{
+        height: auto;
         grid-area: menu;
         position: initial;
         border-right: 3px white solid;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: auto;
     }
     .imagemain{
+        height: auto;
         grid-area: main;
         display: flex;
         justify-content: center;
@@ -388,7 +395,6 @@ a.cartlink i.material-icons{
     }
     .mainimage{
         position: relative;
-        top: -10%;
         height: 660px;
         width: 900px;
         background-image: url(../img/stefan_gustav@W960pxH960px.jpg);
@@ -410,6 +416,8 @@ a.cartlink i.material-icons{
     }
     .shopmain{
         grid-area: main;
+        width: calc(100% - 3px);
+        margin-left: 3px;
     }
     .cartbutton{
         margin: 25% 0 0 0;
@@ -427,7 +435,7 @@ a.cartlink i.material-icons{
         flex-direction: column;
         height: 500px;
         width: 300px;
-        margin: 20px;
+        padding: 20px;
         justify-content: space-between;
     }
     .pricecontainer{
@@ -443,6 +451,7 @@ a.cartlink i.material-icons{
     }
     .productprice{
         font-size: 2rem;
+        text-align: center;
     }
     .buybutton{
         font-size: 2rem;
@@ -458,26 +467,56 @@ a.cartlink i.material-icons{
     .categorybutton{
         width: auto;
         padding-right: 10%;
+        flex-direction: column;
     }
     .productmain{
-        grid-template-columns: 30% 70%;
+        width: calc(100% - 3px);
+        grid-template-columns: 35% 65%;
         grid-template-rows: 15% 35% 10% 35%;
         grid-template-areas: 
         "image header"
         "image price"
         "image desc"
         "image desc";
+        margin-left: 3px;
+        padding: 0;
     }
     .producttitle.ppage{
-        
+        font-size: 3rem;
+    }
+    .producttitle.ppage i.material-icons{
+        font-weight: bold;
+        padding-right: 10%;
     }
     .pimagecont.ppage{
-
+        justify-content: center;
+    }
+    .productimage.ppage{
+        height: 400px;
+        width: 300px;
+        position: relative;
+        top: -10%;
+    }
+    .productimage.one{
+        background-image: url(../img/gustav_tshirt@W400pxH350px.jpg);
+    }
+    .productimage.two{
+        background-image: url(../img/stefan_gustav_tshirt@W350pxH400px.jpg);
+    }
+    .productimage.three{
+        background-image: url(../img/stefan_gustav@W400pxH400px.jpg);
     }
     .producttext.ppage{
-
+        font-size: 2rem;
+        align-items: flex-start;
     }
     .productdesc.ppage{
 
+    }
+    .jimmiemain{
+        grid-area: main;
+    }
+    .jimmietext{
+        font-size: 7rem;
     }
 }
