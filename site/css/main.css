@@ -73,6 +73,7 @@ header{
 ul a{
     text-decoration: none;
     color: white;
+    text-shadow: 2px 1px 2px #2E2E2E;
 }
 .menuactivate{
     top: 0;
@@ -385,7 +386,6 @@ a.cartlink i.material-icons{
         border-right: 3px white solid;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
     .imagemain{
         height: auto;
@@ -401,12 +401,25 @@ a.cartlink i.material-icons{
         background-image: url(../img/stefan_gustav@W960pxH960px.jpg);
     }
     .menu ul{
-        position: relative;
-        top: -10%;
+        margin-top: 50px;
+    }
+    .menu li{
+        padding: 0px;
+    }
+    ul a{
+        padding: 5px;
+        font-size: 1.7rem;
+        border-radius: 5px;
+        border: 1px rgba(0, 0, 0, 0) solid;
+        
+    }
+    ul a:hover{
+        border: 1px rgba(0, 0, 0, 1) solid;
+        box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,1);
+
     }
     .scarylink{
-        top: 0%;
-        left: 25%;
+        top: 250px;
     }
     .title{
         text-align: center;
