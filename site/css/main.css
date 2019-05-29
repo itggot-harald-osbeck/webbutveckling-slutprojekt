@@ -243,6 +243,9 @@ ul a{
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: 52px;
+    overflow: hidden;
+    transition: 1s;
 }
 .categorybutton{
     width: calc(50% - 12px);
@@ -262,8 +265,6 @@ ul a{
 }
 .categorymenu{
     width: 100%;
-    display: none;
-    
 }
 .categorybuttoncont{
     height: 50px;
@@ -285,11 +286,15 @@ ul a{
     
 }
 .catmenuactivate{
+    transition: 1s;
+    height: 208px; 
+}
+/* .catmenuactivate{
     display: flex;
     align-items: center;
     flex-direction: column;
     z-index: 10;
-}
+} */
 a.cartlink{
     display: flex;
     align-items: center;
