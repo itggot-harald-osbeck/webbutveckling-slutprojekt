@@ -223,7 +223,7 @@ ul a{
 .productdesc.ppage{
     grid-area: desc;
     display: block;
-    line-height: 25px;
+    line-height: 1.6;
     padding: 0 20px 0 0;
     
 }
@@ -480,6 +480,7 @@ a.cartlink i.material-icons{
     }
     .productdesc{
         display: flex;
+        line-height: 1.6;
     }
     .categorybutton{
         width: auto;
